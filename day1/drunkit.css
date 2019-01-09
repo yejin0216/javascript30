@@ -1,0 +1,30 @@
+html {
+    background-image: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    font-family: SansSerif;
+}
+
+.key {
+    transform: 0.07s;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-aline: center;
+    border: 2px solid #000;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.key.playing {
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.key kbd {
+
+}
+
+.key .sound {
+    font-size: 8px;
+    color: yellow;
+}
+
