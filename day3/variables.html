@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <title>day3</title>
+</head>
+<body>
+    <span>Update CSS Variables with</span> <h1>JS</h1>
+    <div class="controls">
+        <label>Spacing</label>
+        <input type="range" name="spacing" min="0" max="200" value="10" data-sizing="px"/>
+        <label>Blur</label>
+        <input type="range" name="blur" min="0" max="100" value="10" data-sizing="px"/>
+        <label>Base Color</label>
+        <input type="color" name="base" value="#ffc600"/>
+    </div>
+    <img src="background.jpg"/>
+<style>
+    :root {
+        --base:#ffc600;
+        --spacing: 10px;
+        --blur: 10px;
+    }
+    html {
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+    }
+    img {
+        max-width: 70%;
+        text-align: center;
+        background-color: var(--base);
+        padding: var(--spacing);
+        filter: blur(var(--blur));
+    }
+    span {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    h1 {
+        display: inline-block;
+        color:var(--base);
+    }
+    .controls {
+        margin: 20px 0;
+    }
+</style>
+<script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function updateStyle() {
+        const suffix = this.dataset.sizing||'';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix); //:root에 세팅한다.
+    }
+
+    inputs.forEach(input => input.addEventListener('change', updateStyle));
+</script>
+</body>
+</html>
