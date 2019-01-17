@@ -9,3 +9,4 @@
 ### History
  - 02/12/18, Creating a new repository.
  - 01/09/19, JavaScript Drum Kit
+ - 01/12/19, JavaScript + CSS Clock
