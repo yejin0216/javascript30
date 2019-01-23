@@ -7,6 +7,8 @@
 
 
 ### History
- - 02/12/18, Creating a new repository.
+ - 12/02/18, Creating a new repository.
  - 01/09/19, JavaScript Drum Kit
  - 01/12/19, JavaScript + CSS Clock
+ - 01/21/19, Array Cardio Day 1
+ 
