@@ -11,4 +11,4 @@
  - 01/09/19, JavaScript Drum Kit
  - 01/12/19, JavaScript + CSS Clock
  - 01/21/19, Array Cardio Day 1
- 
+ - 01/29/19, Flex Panel Gallery 
