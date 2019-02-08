@@ -24,7 +24,7 @@
         .then(data => cities.push(...data));
 
     const search = document.querySelector('.search');
-    const result = document.querySelector('.ul');
+    const suggestions = document.querySelector('.suggestions');
 
     // 데이터 검색
     function matchList(condition, cities) {
@@ -36,7 +36,14 @@
 
     function displayList() {
         const matchArray = matchList(this.value, cities);
+        const list = matchArray.map(a => {
+            return `<li>
+                       <span class="name">${a.city} ${a.state}</span>
+                       <span class="population">${a.population}</span>
+                    </li>`;
+        }).join('');
 
+        suggestions.innerHTML = list;
     }
 
     search.addEventListener('change', displayList);
