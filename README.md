@@ -13,3 +13,4 @@
  - 01/21/19, Array Cardio Day 1
  - 01/29/19, Flex Panel Gallery 
  - 02/08/19, Type Ahead
+ - 02/10/19, Array Cardio Day 2
