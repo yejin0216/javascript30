@@ -34,11 +34,16 @@
         })
     };
 
+    // 레이아웃
     function displayList() {
-        const matchArray = matchList(this.value, cities);
+        const condition = this.value;
+        const matchArray = matchList(condition, cities);
+        const reg = new RegExp(condition, 'gi');
         const list = matchArray.map(a => {
+            const cityName = a.city.replace(reg, `<span class="hl">${condition}</span>`);
+            const stateName = a.state.replace(reg, `<span class="hl">${condition}</span>`);
             return `<li>
-                       <span class="name">${a.city} ${a.state}</span>
+                       <span class="name">${cityName} ${stateName}</span>
                        <span class="population">${a.population}</span>
                     </li>`;
         }).join('');
