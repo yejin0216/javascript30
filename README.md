@@ -15,3 +15,4 @@
  - 02/08/19, Type Ahead
  - 02/10/19, Array Cardio Day 2
  - 02/11/19, Fun with HTML5 Canvas
+ - 02/14/19, 14 Must Know Dev Tools Tricks
